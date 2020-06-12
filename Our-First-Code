@@ -1,6 +1,7 @@
 import cv2
+img = cv2.imread(r"C:\\Users\\user\\Desktop\\WPy64-3830\\picture\\apple01.jpg") # ダブルクォーテーションの中身は各自で指定
 import matplotlib.pyplot as plt
-img = cv2.imread("C:\\Users\\Desktop\\WPy64-3830\\picture\\apple01.jpg")    # ダブルクォーテーションで囲った部分は各自の画像の場所を指定してください。
 %matplotlib inline
-plt.imshow(cv2.cvtColor(img,  cv2.COLOR_BGR2_RGB))
-
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+imgGRAY = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+plt.imshow(imgGRAY,cmap="gray")
