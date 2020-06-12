@@ -3,4 +3,4 @@ import matplotlib.pyplot as plt
 img = cv2.imread("C:\\Users\\Desktop\\WPy64-3830\\picture\\apple01.jpg")    # ダブルクォーテーションで囲った部分は各自の画像の場所を指定してください。
 %matplotlib inline
 plt.imshow(cv2.cvtColor(img,  cv2.COLOR_BGR2_RGB))
-# I am Daigo
+
